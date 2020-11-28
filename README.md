@@ -18,3 +18,6 @@
 
 - EGOING_REACT
     React의 전반적인 지식 습득하기
+
+- PYTHON
+    Python의 전반적인 지식 습득하기
