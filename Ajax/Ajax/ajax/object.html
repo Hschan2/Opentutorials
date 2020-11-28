@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>object</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var employee = {
+			"programmer" : "egoing",
+			"designer" : "leezche"
+		};
+		document.write("programmer : " + employee.programmer + "<br>");
+
+		employee.bookkeeper = "duru";
+		document.write("bookkeeper : " + employee.bookkeeper + "<br>");
+
+		employee["data scientist"] = "taeho";
+		document.write("data scientist : " + employee["data scientist"] + "<br>");
+		// key 값에 employee 에 있는 값들을 가져온다. 반복문
+		for(var key in employee) {
+			document.write(key + ' : ' + employee[key] + "<br>");
+		}
+		//function 선언 다른 방법, showAll 다 보여주기
+		employee.showAll = function() {
+			// this 는 emplyee의 이름이 바뀌어도 상관없음
+			for(var key in this) {
+			document.write(key + ' : ' + employee[key] + "<br>");
+			}
+		}
+		employee.showAll();
+	</script>
+</body>
+</html>
